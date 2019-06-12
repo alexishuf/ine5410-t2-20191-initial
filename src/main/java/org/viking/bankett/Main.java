@@ -34,7 +34,7 @@ public class Main  {
 //    @Option(name = "--super-tol-rate", aliases = {"-g"}, usage = "Tolerance rate " +
 //            "in prayers count difference between all normal gods and each super god. " +
 //            "Must be in the [0.0, 1.0) range.")
-    private double superGodToleranceRate = 0.05;
+    private double superGodToleranceRate = 0.10;
 
     @Option(name = "--help", aliases = {"-h"}, help = true)
     private boolean help = false;
