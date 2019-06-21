@@ -91,7 +91,7 @@ public class GatesOfValhalla {
             StringBuilder builder = new StringBuilder();
             for (God rival : god.getRivals()) {
                 int his = prayers[rival.ordinal()].get();
-                int maxAllowed = (int) Math.ceil(his * (1+rivalToleranceRate));
+                int maxAllowed = Math.max(1, (int)Math.ceil(his * (1+rivalToleranceRate)));
                 int minAllowed = (int) Math.floor(his * (1-rivalToleranceRate));
                 if (count < minAllowed) {
                     error = " [TOO FEW]";
