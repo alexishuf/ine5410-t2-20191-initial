@@ -5,6 +5,7 @@
 MVN=mvn
 ifeq ($(wildcard .mvn mvnw), .mvn mvnw)
 	MVN=./mvnw
+	$(shell chmod +x mvnw || true)
 endif
 
 all: package
